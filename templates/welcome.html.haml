@@ -1,9 +1,15 @@
 %h1 Droppit‽
-%form{id: "file-form"}
-  %label{for: "username"}
-    Username
-  %input{name: "username", type: "text", id: "username", value: "Anonymous"}
-  %input{type: "file", id: "file-field"}
-  %input{type: "submit"}
-%div{id: "messages"}
+%label{for: "username"}
+  Username
+%input#username{name: "username", type: "text", value: "Anonymous"}
+
+%form#file-form
+  %input#file-field{type: "file"}
+  %input{type: "submit", value: "upload"}
+%form#chat-form
+  %label{for: "chat-field"}
+    Chat:
+  %input#chat-field{type: "text"}
+  %input{type: "submit", value: "post"}
+%ul#messages
 %script{src: "/static/js/sockets.js", type: "text/javascript"}

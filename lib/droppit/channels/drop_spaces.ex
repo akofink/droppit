@@ -11,4 +11,9 @@ defmodule Droppit.Channels.DropSpaces do
     broadcast socket, "file:dropped", args
     socket
   end
+
+  def event(socket, "message:dropped", args) do
+    broadcast socket, "message:dropped", args
+    socket
+  end
 end
