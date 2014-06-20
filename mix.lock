@@ -1,4 +1,5 @@
-%{"cowboy": {:git, "git://github.com/extend/cowboy.git", "1b22e1582e28bee2d09d01a15c67243b054c599a", []},
+%{"calliope": {:git, "git://github.com/nurugger07/calliope.git", "a674c86da57cb6f0bcdd5ad3df3fcce30b85005b", []},
+  "cowboy": {:git, "git://github.com/extend/cowboy.git", "1b22e1582e28bee2d09d01a15c67243b054c599a", []},
   "cowlib": {:git, "git://github.com/extend/cowlib.git", "e2ffefe828b918486e2cd76e44c54ae9b62c616e", [ref: "0.6.2"]},
   "ex_conf": {:package, "0.1.2"},
   "inflex": {:package, "0.2.3"},

@@ -1,7 +1,8 @@
 defmodule Droppit.Controllers.Pages do
   use Phoenix.Controller
+  use Droppit.Controllers.Application
 
   def index(conn) do
-    text conn, "Hello world"
+    html conn, view(:welcome)
   end
 end

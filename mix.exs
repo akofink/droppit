@@ -24,7 +24,8 @@ defmodule Droppit.Mixfile do
   defp deps do
     [
       {:phoenix, "0.2.10"},
-      {:cowboy, "~> 0.10.0", github: "extend/cowboy", optional: true}
+      {:cowboy, "~> 0.10.0", github: "extend/cowboy", optional: true},
+      {:calliope, github: "nurugger07/calliope"}
     ]
   end
 end
