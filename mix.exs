@@ -4,7 +4,7 @@ defmodule Droppit.Mixfile do
   def project do
     [ app: :droppit,
       version: "0.0.1",
-      elixir: "~> 0.13.2",
+      elixir: "~> 0.14.0",
       deps: deps ]
   end
 
@@ -23,9 +23,8 @@ defmodule Droppit.Mixfile do
   # { :barbat, "~> 0.1", github: "elixir-lang/barbat" }
   defp deps do
     [
-      {:phoenix, "0.2.4"},
-      {:jazz, github: "meh/jazz", ref: "7af3b74e58eb1a3fc6b9874a2077efa420f6dfcc"},
-      {:cowboy, github: "extend/cowboy", override: true, ref: "05024529679d1d0203b8dcd6e2932cc2a526d370"},
+      {:phoenix, "0.2.10"},
+      {:cowboy, "~> 0.10.0", github: "extend/cowboy", optional: true}
     ]
   end
 end

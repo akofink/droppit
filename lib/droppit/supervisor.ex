@@ -1,15 +1,12 @@
 defmodule Droppit.Supervisor do
-  use Supervisor.Behaviour
+  use Supervisor
 
   def start_link do
     :supervisor.start_link(__MODULE__, [])
   end
 
   def init([]) do
-    children = [
-      # Define workers and child supervisors to be supervised
-      # worker(Droppit.Router, [])
-    ]
+    children = []
 
     # See http://elixir-lang.org/docs/stable/Supervisor.Behaviour.html
     # for other strategies and supported options
