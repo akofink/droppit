@@ -23,9 +23,10 @@ defmodule Droppit.Mixfile do
   # { :barbat, "~> 0.1", github: "elixir-lang/barbat" }
   defp deps do
     [
-      {:phoenix, "0.2.10"},
       {:cowboy, "~> 0.10.0", github: "extend/cowboy", optional: true},
-      {:calliope, github: "nurugger07/calliope"}
+      {:phoenix, "0.2.10"},
+      {:calliope, github: "nurugger07/calliope"},
+      {:exactor, "~> 0.5.0"}
     ]
   end
 end
